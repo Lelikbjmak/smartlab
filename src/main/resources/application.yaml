@@ -1,6 +1,6 @@
 app:
   league-schedule:
     league-start-date: ${LEAGUE_START_DATE:2020-10-17}
-    league-game-start-time: "17:00"
-    league-game-break-interval-in-days: 7d
-    league-round-break-interval-in-days: 21d
+    league-game-start-time: ${LEAGUE_START_TIME:17:00}
+    league-game-break-interval-in-days: ${LEAGUE_GAME_BREAK_INTERVAL_IN_DAYS:7d}
+    league-round-break-interval-in-days: ${LEAGUE_ROUND_BREAK_INTERVAL_IN_DAYS:21d}
