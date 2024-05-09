@@ -21,10 +21,10 @@ public record LeagueScheduleConfigProperties(
     LocalTime leagueGameStartTime,
 
     @NonNull
-    Duration leagueGameBreakInterval,
+    Duration leagueGameBreakIntervalInDays,
 
     @NonNull
-    Duration leagueRoundBreakInterval
+    Duration leagueRoundBreakIntervalInDays
 ) {
 
 }

@@ -22,15 +22,20 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
-    implementation 'org.springframework.boot:spring-boot-starter-validation'
 
-    implementation 'org.apache.commons:commons-lang3:3.14.0'
+    implementation 'commons-io:commons-io'
+    implementation 'org.apache.commons:commons-lang3'
 
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    constraints {
+        implementation("commons-io:commons-io:${apacheCommonsIoVersion}") {}
+        implementation("org.apache.commons:commons-lang3:${apacheCommonsLangVersion}") {}
+    }
 }
 
 tasks.named('test') {

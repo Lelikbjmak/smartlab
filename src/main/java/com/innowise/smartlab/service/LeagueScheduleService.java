@@ -1,10 +1,9 @@
 package com.innowise.smartlab.service;
 
-import com.innowise.smartlab.dto.LeagueDto;
-import com.innowise.smartlab.dto.MatchDto;
-import java.util.List;
+import com.innowise.smartlab.entity.League;
+import com.innowise.smartlab.entity.LeagueSchedule;
 
 public interface LeagueScheduleService {
 
-  List<MatchDto> composeSchedule(LeagueDto league);
+  LeagueSchedule composeSchedule(League league);
 }

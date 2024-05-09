@@ -1,10 +1,11 @@
-package com.innowise.smartlab.dto;
+package com.innowise.smartlab.dto.request;
 
 import com.innowise.smartlab.annotation.EvenSize;
+import com.innowise.smartlab.dto.TeamDto;
 import jakarta.validation.constraints.NotEmpty;
 import java.util.List;
 
-public record LeagueDto(
+public record LeagueScheduleRequestDto(
 
     String league,
 
