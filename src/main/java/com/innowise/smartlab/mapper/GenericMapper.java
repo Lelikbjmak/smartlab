@@ -1,14 +1,23 @@
 package com.innowise.smartlab.mapper;
 
 import java.util.List;
+import org.apache.commons.lang3.NotImplementedException;
 
 public interface GenericMapper<E, D> {
 
-  D toDto(E entity);
+  default D toDto(E entity) {
+    throw new NotImplementedException("Method not implemented");
+  }
 
-  E toEntity(D dto);
+  default E toEntity(D dto) {
+    throw new NotImplementedException("Method not implemented");
+  }
 
-  List<D> toDtoList(List<E> entityList);
+  default List<D> toDtoList(List<E> entityList) {
+    throw new NotImplementedException("Method not implemented");
+  }
 
-  List<E> toEntityList(List<D> dtoList);
+  default List<E> toEntityList(List<D> dtoList) {
+    throw new NotImplementedException("Method not implemented");
+  }
 }

@@ -4,11 +4,11 @@ import java.util.List;
 
 public class League {
 
-  String league;
+  private String league;
 
-  String country;
+  private String country;
 
-  List<Team> teams;
+  private List<Team> teams;
 
   public League() {
   }

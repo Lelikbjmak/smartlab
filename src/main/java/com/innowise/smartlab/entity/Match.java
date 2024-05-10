@@ -1,15 +1,14 @@
 package com.innowise.smartlab.entity;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import java.time.LocalDateTime;
 
 public class Match {
 
-  public Team homeTeam;
+  private Team homeTeam;
 
-  public Team awayTeam;
+  private Team awayTeam;
 
-//  @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd.MM.yyyy hh:mm")
+  //  @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd.MM.yyyy hh:mm")
   public LocalDateTime conductionDateTime;
 
   public Match() {
